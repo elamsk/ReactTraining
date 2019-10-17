@@ -33,7 +33,7 @@ renderPostsList(){
    };
 
     render(){
-        let allpost = this.state.Posts.map(p => <li><Link to="/PostDetails">{p.title}</Link></li>)
+        let allpost = this.state.Posts.map(p => <li key={p.id}><Link to={'/PostDetails/'+p.id}>{p.title}</Link></li>)
        return <React.Fragment>
         <div className="jumbotron">
         <h2>All Post</h2>

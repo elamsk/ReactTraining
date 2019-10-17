@@ -7,7 +7,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import LifeCycle from './lifecycle.component';
 import { Posts } from './post.component';
-import {PostDetails} from './PostDetails.Component';
+import PostDetails from './PostDetails.Component';
+import { Stocks } from './Stocks.component';
 
 var MyRoutes = 
 <React.Fragment>
@@ -25,7 +26,8 @@ var MyRoutes =
 </nav>
 <Route path="/" exact component={App}></Route>
 <Route path="/posts" component={Posts}></Route>
-<Route path="/postDetails" component={PostDetails}></Route>
+<Route path="/postDetails/:id" component={PostDetails}></Route>
+<Route path="/Stocks" component={Stocks}></Route>
 </BrowserRouter>
 </React.Fragment>
 
